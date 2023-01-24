@@ -130,6 +130,22 @@ section h2{
   margin-top: 10px;
   text-align: center;
 }
+.call-phone{
+	padding: 10px;
+	text-decoration: none;
+	color: red;
+	font-weight: bolder;
+	display: flex;
+	align-items: center;
+}
+.call-phone img{
+	width: 20px;
+	vertical-align: middle;
+}
+.call-phone span{
+	font-size: 1rem;
+	vertical-align: middle;
+}
 .price{
 	text-align: right;
 }
@@ -185,4 +201,5 @@ section h2{
 	.card {
 		max-width: 100%;
 	}
+	k
 }

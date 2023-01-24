@@ -2,16 +2,16 @@
 <html lang="en" translate="yes">
 	<head>
 		<title>Cleopatre Salon</title>
-		<link rel="stylesheet" type="text/css" href="./styles.css">
-		<link rel="stylesheet" type="text/css" href="./header.css">
-		<script type="text/javascript" src="index.js" defer></script>
-		<script type="text/javascript" src="prices.js" defer></script>
-		<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+		<link rel="stylesheet" type="text/css" href="css/m_styles.css">
+		<link rel="stylesheet" type="text/css" href="css/m_header.css">
+		<script type="text/javascript" src="js/index.js" defer></script>
+		<script type="text/javascript" src="js/prices.js" defer></script>
+		<!-- <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 		<script type="text/javascript" defer>
 			function googleTranslateElementInit() {
 				new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 			}
-		</script>
+		</script> -->
 
 	</head>
 	<body>
@@ -27,13 +27,19 @@
 					<li><a href="#services">Services</a></li>
 					<li><a href="#hairdressers">Meet Our Hairdressers</a></li>
 					<li><a href="#pricing">Pricing</a></li>
-					<li><a href="#address">Address</a></li>
+					<li><a href="#directions">Get Directions</a></li>
 					<li><a href="#about">About Us</a></li>
 				</ul>
 				
 			</nav>
 			<h1><a href="#">Cleopatre <span class="red">S</span>alon</a></h1>
-			<div id="google_translate_element"></div>
+			<div id="side-section">
+				<a class="call-phone" href="tel:555-555-5555">
+					<img src="img/custom-phone.svg">
+					<span>Call Now</span>
+				</a>
+				<!-- <div id="google_translate_element"></div> -->
+			</div>
 		</header>
 
 		<nav id="top-navbar">
@@ -41,16 +47,24 @@
 				<li><a href="#services">Services</a></li>
 				<li><a href="#hairdressers">Meet Our Hairdressers</a></li>
 				<li><a href="#pricing">Pricing</a></li>
-				<li><a href="#address">Address</a></li>
+				<li><a href="#directions">Get Directions</a></li>
 				<li><a href="#about">About Us</a></li>
 			</ul>
 		</nav>
 
+		<nav id="mobile-actionbar">
+			<a class="call-phone" href="tel:555-555-5555">
+				<img src="img/custom-phone.svg">
+				<span>Call Now</span>
+			</a>
+			
+		</nav>
 		
-
 		<div id="opening-hours">
 			<p>Open every day except Sunday from 08:00 AM to 09:00 PM</p>
 		</div>
+
+		<div id="vitrine-image"></div>
 
 		<main>
 			<section id="services">
@@ -76,7 +90,7 @@
 						<h3>Hair Treatment</h3>
 						<p>We offer a variety of treatments for damaged, dry or oily hair...</p>
 					</div>
-					<div class="card last">
+					<div class="card">
 						<img src="img/service.jpg" alt="Perm">
 						<h3>Perm</h3>
 						<p>Get the curls you've always wanted with our perm service...</p>
@@ -137,8 +151,8 @@
 			</section>
 
 
-			<section id="address">
-				<h2>Address</h2>
+			<section id="directions">
+				<h2>Directions</h2>
 				<p>Where to find us...</p>
 				<div id="map-container">
 					<iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.8715666208158!2d30.108974409835216!3d-1.959077038370855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6559619b7df%3A0x3dcb38a43d78ee59!2s24R5%2BCGM%2C%20KG%20201%20St%2C%20Kigali!5e0!3m2!1sen!2srw!4v1674407585892!5m2!1sen!2srw" width="70%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

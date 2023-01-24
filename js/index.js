@@ -1,30 +1,33 @@
 var container = document.querySelector(".card-container");
 var ignoreNextScrollEvent = false;
-var userHasScrolled = false
+var userHasScrolled = false;
+var scrollDirection = 1
 
 container.onscroll = function (e)
 {
 	if (ignoreNextScrollEvent){
-    	ignoreNextScrollEvent = false
-    	return
+    	ignoreNextScrollEvent = false;
+    	return;
 	}else{
 		userHasScrolled = true;
 		setTimeout(()=>{
-			userHasScrolled = false
-		}, 20000)
+			userHasScrolled = false;
+		}, 20000);
 	}
 }
 
 function smoothScroll(){
 	if(userHasScrolled == false){
 		ignoreNextScrollEvent = true;
-		container.scrollLeft += 1
-		if (container.offsetWidth + container.scrollLeft >= container.scrollWidth) {
-			container.scrollLeft = 0
+		container.scrollLeft += scrollDirection;
+		if (container.offsetWidth + container.scrollLeft >= container.scrollWidth || container.scrollLeft == 0) {
+			scrollDirection *= -1
+			document.getElementById('vitrine-image').style.backgroundImage="url(../img/hairdresser.jpg)"
+
 		}
 	}
 }
-setInterval(smoothScroll, 100)
+setInterval(smoothScroll, 100);
 
 
 const hamburger = document.querySelector(".hamburger");

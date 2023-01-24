@@ -34,11 +34,15 @@
 	font-size: 3rem;
 }
 #google_translate_element{
-	float: right;
+	display: flex;
+	align-items: center;
 }
 #header h1 a {
 	text-decoration: none;
 	color: black;
+}
+#side-section {
+	display: flex;
 }
 .red{
 	color: red;
@@ -94,6 +98,13 @@
 @media only screen and (max-width: 992px) {
 	#header{
 		height: 10rem;
+		justify-content: flex-start;
+	}
+	#header h1{
+		margin-left: 20px;
+	}
+	#side-section{
+		display: none;
 	}
 	.header-navbar ul{
 		top: 10rem;
